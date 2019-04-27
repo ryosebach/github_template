@@ -5,5 +5,5 @@ curl -sL raw.github.com/ryosebach/github_template/master/ISSUE_TEMPLATE.md -o .g
 curl -sL raw.github.com/ryosebach/github_template/master/PULL_REQUEST_TEMPLATE.md -o .github/PULL_REQUEST_TEMPLATE.md
 curl -sL raw.github.com/ryosebach/github_template/master/POST_MORTEM.md -o POST_MORTEM.md
 touch .gitignore
-sed -i '1iPOST_MORTEM.md' .gitignore
+sed -i '' '1s/^/POST_MORTEM.md'\\$'\n'\\$'\n''/' .gitignore 
 
